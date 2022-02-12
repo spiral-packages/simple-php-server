@@ -2,16 +2,16 @@
 
 declare(strict_types=1);
 
-namespace VendorName\Skeleton\Bootloader;
+namespace Spiral\SimpleServer\Bootloader;
 
 use Spiral\Boot\Bootloader\Bootloader;
 use Spiral\Core\Container;
 use Spiral\Config\ConfiguratorInterface;
-use VendorName\Skeleton\Commands;
-use VendorName\Skeleton\Config\SkeletonConfig;
+use Spiral\SimpleServer\Commands;
+use Spiral\SimpleServer\Config\SimpleServerConfig;
 use Spiral\Console\Bootloader\ConsoleBootloader;
 
-class SkeletonBootloader extends Bootloader
+class SimpleServerBootloader extends Bootloader
 {
     protected const BINDINGS = [];
     protected const SINGLETONS = [];
@@ -27,7 +27,7 @@ class SkeletonBootloader extends Bootloader
     {
         $this->initConfig();
 
-        $console->addCommand(Commands\SkeletonCommand::class);
+        $console->addCommand(Commands\SimpleServerCommand::class);
     }
 
     public function start(Container $container): void
@@ -37,7 +37,7 @@ class SkeletonBootloader extends Bootloader
     private function initConfig(): void
     {
         $this->config->setDefaults(
-            SkeletonConfig::CONFIG,
+            SimpleServerConfig::CONFIG,
             []
         );
     }

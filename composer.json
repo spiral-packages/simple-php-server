@@ -1,17 +1,17 @@
 {
-  "name": ":vendor_slug/:package_slug",
-  "description": ":package_description",
+  "name": "spiral-packages/simple-php-server",
+  "description": "This is my package simple-php-server",
   "keywords": [
-    ":vendor_name",
+    "spiral-packages",
     "spiral",
-    ":package_slug"
+    "simple-php-server"
   ],
-  "homepage": "https://github.com/:vendor_slug/:package_slug",
+  "homepage": "https://github.com/spiral-packages/simple-php-server",
   "license": "MIT",
   "authors": [
     {
-      "name": ":author_name",
-      "email": "author@domain.com",
+      "name": "kastahov",
+      "email": "kastahov1021@gmail.com",
       "role": "Developer"
     }
   ],
@@ -28,13 +28,13 @@
   },
   "autoload": {
     "psr-4": {
-      "VendorName\\Skeleton\\": "src"
+      "Spiral\\SimpleServer\\": "src"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "VendorName\\Skeleton\\Tests\\App\\": "tests/app",
-      "VendorName\\Skeleton\\Tests\\": "tests/src"
+      "Spiral\\SimpleServer\\Tests\\App\\": "tests/app",
+      "Spiral\\SimpleServer\\Tests\\": "tests/src"
     }
   },
   "scripts": {
@@ -42,12 +42,15 @@
     "psalm": "vendor/bin/psalm --config=psalm.xml ./src"
   },
   "config": {
-    "sort-packages": true
+    "sort-packages": true,
+    "allow-plugins": {
+      "composer/package-versions-deprecated": true
+    }
   },
   "extra": {
     "spiral": {
       "bootloaders": [
-        "VendorName\\Skeleton\\Bootloader\\SkeletonBootloader"
+        "Spiral\\SimpleServer\\Bootloader\\SimpleServerBootloader"
       ]
     }
   },
