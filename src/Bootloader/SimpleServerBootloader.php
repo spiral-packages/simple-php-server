@@ -23,11 +23,11 @@ class SimpleServerBootloader extends Bootloader
     {
     }
 
-    public function boot(Container $container, ConsoleBootloader $console): void
+    public function boot(ConsoleBootloader $console): void
     {
-        $this->initConfig();
+        //$this->initConfig();
 
-        $console->addCommand(Commands\SimpleServerCommand::class);
+        $console->addCommand(Commands\ServeCommand::class);
     }
 
     public function start(Container $container): void
