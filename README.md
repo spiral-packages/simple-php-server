@@ -1,12 +1,11 @@
-# This is my package simple-php-server
+Simple PHP web server for Spiral Framework
 
 [![PHP](https://img.shields.io/packagist/php-v/spiral-packages/simple-php-server.svg?style=flat-square)](https://packagist.org/packages/spiral-packages/simple-php-server)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/spiral-packages/simple-php-server.svg?style=flat-square)](https://packagist.org/packages/spiral-packages/simple-php-server)
 [![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spiral-packages/simple-php-server/run-tests?label=tests&style=flat-square)](https://github.com/spiral-packages/simple-php-server/actions?query=workflow%3Arun-tests+branch%3Amain)
 [![Total Downloads](https://img.shields.io/packagist/dt/spiral-packages/simple-php-server.svg?style=flat-square)](https://packagist.org/packages/spiral-packages/simple-php-server)
 
-This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
-
+The package helps running applications on the PHP development server. As a developer, you can use the package to develop and test various functions within the application. It also accepts two additional options. You can use the host for changing application’s address and port.
 
 ## Requirements
 
@@ -14,8 +13,6 @@ Make sure that your server is configured with following PHP version and extensio
 
 - PHP 8.0+
 - Spiral framework 2.9+
-
-
  
 ## Installation
 
@@ -37,10 +34,10 @@ protected const LOAD = [
 > Note: if you are using [`spiral-packages/discoverer`](https://github.com/spiral-packages/discoverer), 
 > you don't need to register bootloader by yourself.
 
-## Testing
+## Starting a server
 
 ```bash
-composer test
+php app.php serve
 ```
 
 ## Changelog
