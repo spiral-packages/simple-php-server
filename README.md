@@ -1,11 +1,14 @@
-Simple PHP web server for Spiral Framework
+# Simple PHP web server for Spiral Framework
 
-[![PHP](https://img.shields.io/packagist/php-v/spiral-packages/simple-php-server.svg?style=flat-square)](https://packagist.org/packages/spiral-packages/simple-php-server)
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spiral-packages/simple-php-server.svg?style=flat-square)](https://packagist.org/packages/spiral-packages/simple-php-server)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spiral-packages/simple-php-server/run-tests?label=tests&style=flat-square)](https://github.com/spiral-packages/simple-php-server/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/spiral-packages/simple-php-server.svg?style=flat-square)](https://packagist.org/packages/spiral-packages/simple-php-server)
+[![PHP Version Require](https://poser.pugx.org/spiral-packages/simple-php-server/require/php)](https://packagist.org/packages/spiral-packages/simple-php-server)
+[![Latest Stable Version](https://poser.pugx.org/spiral-packages/simple-php-server/v/stable)](https://packagist.org/packages/spiral-packages/simple-php-server)
+[![psalm](https://github.com/spiral-packages/simple-php-server/actions/workflows/psalm.yml/badge.svg)](https://github.com/spiral-packages/simple-php-server/actions)
+[![Codecov](https://codecov.io/gh/spiral-packages/simple-php-server/branch/master/graph/badge.svg)](https://codecov.io/gh/spiral-packages/simple-php-server/)
+[![Total Downloads](https://poser.pugx.org/spiral-packages/simple-php-server/downloads)](https://packagist.org/spiral-packages/simple-php-server/phpunit)
 
-The package helps running applications on the PHP development server. As a developer, you can use the package to develop and test various functions within the application. It also accepts two additional options. You can use the host for changing application’s address and port.
+The package helps running applications on the PHP development server. As a developer, you can use the package to develop
+and test various functions within the application. It also accepts two additional options. You can use the host for
+changing application’s address and port.
 
 ## Requirements
 
@@ -13,7 +16,7 @@ Make sure that your server is configured with following PHP version and extensio
 
 - PHP 8.0+
 - Spiral framework 2.9+
- 
+
 ## Installation
 
 You can install the package via composer:
@@ -31,7 +34,7 @@ protected const LOAD = [
 ];
 ```
 
-> Note: if you are using [`spiral-packages/discoverer`](https://github.com/spiral-packages/discoverer), 
+> Note: if you are using [`spiral-packages/discoverer`](https://github.com/spiral-packages/discoverer),
 > you don't need to register bootloader by yourself.
 
 ## Starting a server
